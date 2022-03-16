@@ -4,8 +4,9 @@ var blueCell = document.getElementById('3')
 var colorArr = [];
 var computerArr = [];
 
-
 function yellowClick() {
+        var audio = new Audio('/i.mp3')
+        audio.play();
         yellowCell.style.background = '#ff0';
         setTimeout(function() {
             yellowCell.style.background = '#ffff0061'
@@ -17,6 +18,9 @@ function yellowClick() {
     }
 }
 function redClick() {
+    var audio = new Audio('/b.mp3')
+        audio.play();
+        audio.currentTime = 0;
     redCell.style.background = 'rgb(255, 0, 0)';
     setTimeout(function() {
         redCell.style.background = 'rgba(255, 0, 0, 0.37)'
@@ -28,6 +32,8 @@ function redClick() {
     }
 }
 function blueClick() {
+    var audio = new Audio('/x.mp3')
+        audio.play();
     blueCell.style.background = 'rgb(0, 238, 255)';
     setTimeout(function() {
         blueCell.style.background = 'rgba(0, 238, 255, 0.4)'
@@ -55,11 +61,11 @@ function checkIfWin() {
         Array.isArray(computerArr) &&
         colorArr.length === computerArr.length &&
         colorArr.every((val, index) => val === computerArr[index])) {
-            alert('Its the same')
+            console.log('Its the same')
             computerRandom();
             colorArr = [];
         } else {
-            alert('its not the same,try again')
+            console.log('its not the same,try again')
             computerArr = [];
             colorArr= [];
             computerRandom();
