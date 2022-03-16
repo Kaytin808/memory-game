@@ -21,21 +21,37 @@ body {
   width: 100px;
   height: 100px;
 }
-.cell1:hover {
+/* .cell1:hover {
   background: yellow;
-}
+} */
 .cell1 {
-  background: rgba(255, 255, 0, 0.685);
+  background-color: #ffff0061;
+  transition: 0.5s;
 }
-.cell2:hover {
+
+/* .cell2:hover {
+  background: rgb(255, 0, 0);
+} */
+.cell2 {
+  background: rgba(255, 0, 0, 0.37);
+  transition: 0.5s;
+}
+/* .cell3:hover {
+  background: rgb(0, 217, 255);
+} */
+.cell3 {
+  background: rgba(0, 238, 255, 0.4);
+  transition: 0.5s;
+}
+.yellow {
+  background-color: yellow;
+}
+/* .cell1:active {
+  background: #ff0;
+}
+.cell2:active {
   background: rgb(255, 0, 0);
 }
-.cell2 {
-  background: rgba(255, 0, 0, 0.685);
-}
-.cell3:hover {
-  background: rgb(0, 217, 255);
-}
-.cell3 {
-  background: rgba(0, 238, 255, 0.685);
-}
+.cell3:active {
+  background: rgb(0, 238, 255);
+} */
